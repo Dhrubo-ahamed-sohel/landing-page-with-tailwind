@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-fixedFont: "Poppins", sans-serif;
+    --bg-primary: gradient-to-r from-[#6DA015] to-[#46C0A2];
+    --color-font-primary: #606060;
+    --color-second-black: #555555;
+    --color-primary-blue: #0c1634;
+    --color-secondary-blue: #193071;
+    --color-primary-gray: #353749;
+    --color-secondary-gray: #b1b2b9;
+    --color-primary-red: #cc1609;
+    --color-secondary-red: #cb5549;
+    --color-light-blue: #3990a9;
+    --color-secondary-white: #f9f9f9;
+    --color-primary-cyan: #968b7c;
+
+    --shadow-secondary: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-primary: 0 4px 25px -4px rgba(0, 0, 0, 0.1);
+
+    --container-max-width: 1320px;
+    --container-padding-x: 1rem;
+}
+
+@layer base {
+    .container {
+        @apply max-w-[1400px] container mx-auto px-10 py-3;
+    }
+
+    .buttonBox {
+        @apply bg-gradient-to-r hover:to-[#46C0A2] hover:from-[#6DA015] hover:scale-105 hover:shadow-lg text-[#89CE14] font-semibold py-2 px-6 rounded-full transition-all duration-300 ring-1 ring-inset cursor-pointer ring-[#89CE14] hover:text-white;
+    }
+
+}
+
+@layer utilities {
+    .anchorTag {
+        @apply text-[16px] font-bold bg-gradient-to-r from-green-50 to-blue-50 bg-clip-text text-transparent hover:to-[#46C0A2] hover:from-[#6DA015];
+    }
+}
+
+
+
+.heroImage {
+    background-image: url(./image/hero);
+}
