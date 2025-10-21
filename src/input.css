@@ -47,3 +47,15 @@
 .heroImage {
     background-image: url(./image/hero);
 }
+.heroImage-service {
+    background-image: url(./image/service-hero.png);
+}
+.heroImage-about {
+    background-image: url(./image/about-hero.png);
+}
+.about-why-bg{
+    background-image: url(./image/choose-i-1.png);
+}
+.contact-hero-be{
+    background-image: url(./image/contact-hero-image.png);
+}
